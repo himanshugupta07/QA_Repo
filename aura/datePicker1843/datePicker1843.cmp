@@ -1,0 +1,28 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global" 
+                controller="EmbProdOliHandler">
+    <!-- Attributes -->
+    <aura:attribute name="picklistValues" type="String[]" />
+    <aura:attribute name="selDate" type="String" />
+    <aura:attribute name="publication" type="String" access="global"/>
+    <!-- Register Event -->
+    <aura:registerEvent name="parseDate" type="c:parseDate"/>
+    <!-- Initialisation -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <!-- Markup -->
+    <lightning:layoutItem flexibility="auto" padding="around-small">
+        <div class="custom-box">
+            <table aura:id="pl" id="pl" class="slds-datepicker__month" role="grid">
+                <tbody aura:id="pl1" id="pl1" class="slds-scrollable" style="height: 1rem;">
+                    <aura:iteration items="{!v.picklistValues}" var="item" indexVar="index">
+                        <tr class="slds-card slds-p-top_xx-large">
+                            <td aura:id="{!index}" id="{!index}" onclick="{!c.handleSelect}" role="gridcell">
+                                <span >{!item}</span>
+                            </td>
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>
+        </div>
+    </lightning:layoutItem> 
+</aura:component>

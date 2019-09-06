@@ -1,0 +1,147 @@
+<aura:component controller="EmbProdOliHandler" 
+                implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global" >
+    <aura:attribute name="rowId" type="Integer" default="1" access="global"/>
+    <aura:attribute name="oli" type="OpportunityLineItem" access="global"/>
+    <aura:attribute name="oppId" type="String" access="global"/>
+    <aura:attribute name="oliId" type="String" access="global"/>
+    <aura:attribute name="crncy" type="String" access="global"/>
+    <aura:attribute name="disable" type="Boolean" access="global" default="false"/>
+    <aura:attribute name="IOProduct" type="Boolean" access="global" default="true"/>
+    <!-- Initialisation -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Register Event -->
+    <!-- Registering Changes done to Line Item -->
+    <aura:registerEvent name="RowID" type="c:RowID" />
+    
+    <lightning:recordeditform aura:Id="recordEditForm" 
+                              objectApiName="OpportunityLineItem"
+                              class="slds-box slds-theme_default"
+                              >
+        <div aura:id="IOtool" class="">   
+            <lightning:layout multipleRows="true" horizontalAlign="center">
+                <lightning:layoutItem padding="around-small" size="3">
+                    <span>
+                        <lightning:inputField aura:id="Publication__c" 
+                                              fieldName="Publication__c" 
+                                              value="{! v.oli.Publication__c }" 
+                                              disabled ="{! v.disable }"/>
+                    </span>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" size="2">
+                    <span>
+                        <lightning:inputField aura:id="Platform__c" 
+                                              fieldName="Platform__c" 
+                                              value="{! v.oli.Platform__c }" 
+                                              disabled ="{! v.disable }"/>
+                    </span>
+                </lightning:layoutItem> 
+                <lightning:layoutItem padding="around-small" size="2">
+                    <span>
+                        <lightning:inputField aura:id="Edition__c" 
+                                              fieldName="Edition__c" 
+                                              value="{! v.oli.Edition__c }" 
+                                              disabled ="{! v.disable }"/>
+                    </span>
+                </lightning:layoutItem>
+                                <lightning:layoutItem padding="around-small" size="2">
+                    <!-- datePicker3 is a custom component used to call dates based on Publication -->
+                    <span>
+                        <div class="newLabel1">
+                        <label for="Issue_Date__c" >Issue Date</label>
+                        <c:datePicker3 publication="{! v.oli.Publication__c }" selDate="{! v.oli.Issue_Date__c }" />
+                        <lightning:inputField aura:id="Issue_Date__c" 
+                                              fieldName="Issue_Date__c" 
+                                              value="{! v.oli.Issue_Date__c }"
+                                              variant="label-hidden"
+                                              class="slds-hide"/>
+                        </div>
+                    </span>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" size="2">
+                    <span>
+                        <div class="adsize">
+                            <lightning:inputField aura:id="Ad_Size__c" 
+                                                  fieldName="Ad_Size__c" 
+                                                  value="{! v.oli.Ad_Size__c }" 
+                                                  disabled ="{! v.disable }"/>
+                        </div>
+                    </span>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" size="1">
+                    <!-- Using currency__c to handle discount Calucations -->
+                    <span>
+                        <lightning:inputField aura:id="UnitPrice" fieldName="UnitPrice" value="{! v.oli.UnitPrice }" class="slds-hide"/>
+                        <div class="price1">
+                            <lightning:inputField aura:id="currency__c" 
+                                                  fieldName="currency__c" 
+                                                  value="{! v.oli.currency__c }"
+                                                  onchange="{! c.priceHandler }"
+                                                  disabled ="{! v.disable }"
+                                                  />
+                        </div>
+                    </span>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+        <div aura:id="NonIOProd" class="">
+            <lightning:layout horizontalAlign="end">
+                <lightning:layoutItem padding="around-small">
+                    <lightning:button
+                                      variant="brand"
+                                      label="Split"
+                                      title="Split"
+                                      onclick="{! c.handleSplit }"
+                                      />
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small">
+                    <lightning:button
+                                      variant="destructive"
+                                      label="X"
+                                      title="Close"
+                                      onclick="{! c.handleClose }"
+                                      >
+                        <span>X</span><span data-index="{!rowId}"></span>
+                    </lightning:button>
+                </lightning:layoutItem>
+            </lightning:layout>
+            <lightning:layout multipleRows="true" horizontalAlign="center">
+                <lightning:layoutItem padding="around-small" size="3">
+                    <span>
+                        <lightning:inputField aura:id="Name__c" 
+                                              fieldName="Name__c" 
+                                              value="{! v.oli.Name__c }" 
+                                              disabled ="{! v.disable }"/>
+                    </span>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" size="2">
+                    <span>
+                        <div class="newLabel">
+                            <label for="Issue_Date__c" 
+                                   font-family="'Salesforce Sans',Arial,sans-serif"
+                                   font-size= "0.5rem"
+                                   >Schedule Date</label>
+                            <lightning:inputField aura:id="Issue_Date__c" 
+                                                  fieldName="Issue_Date__c"
+                                                  label="Schedule Date"
+                                                  value="{! v.oli.Issue_Date__c }" 
+                                                  />
+                        </div>
+                    </span>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small" size="2">
+                    <span>
+                        <div class="price">
+                        <lightning:inputField aura:id="currency__c2" 
+                                              fieldName="currency__c" 
+                                              value="{! v.oli.currency__c }" 
+                                              onchange="{! c.priceHandler }"
+                                              />
+                        </div>
+                    </span>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+    </lightning:recordeditform>
+</aura:component>

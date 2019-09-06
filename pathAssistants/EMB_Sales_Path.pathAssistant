@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>EMB Sales Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;ul&gt;&lt;li&gt;Please provide loss reason &lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>0% Not Happening</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>EIU_Sales_Agent__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Amount</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt;For EMEA and US&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;If an RFP is required, fill in the &lt;a href=&quot;https://na79.salesforce.com/servlet/servlet.Integration?lid=00b14000001QlCh&amp;amp;eid=00530000001Xvlg&amp;amp;ic=1&amp;amp;linkToken=VmpFPSxNakF4T1Mwd01TMHpNVlF4TnpveE9Eb3hOQzQwTWpWYSxkS19LdjdCb1pqcVEyc3luTlEyNGhrLFlXWmtNR0po&quot; target=&quot;_blank&quot;&gt;Internal RFP form&lt;/a&gt; and upload to Salesforce using the Upload RFP button.&lt;/li&gt;&lt;li&gt;The RFP email notification will have your internal RFP form attached&lt;/li&gt;&lt;li&gt;A ‘strategist’ or editor will be assigned to your opportunity and you will be notified&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;For Asia&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Client expressed an interest but there has not been a concrete discussion yet.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>10% Early discussions</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Click 100% “&lt;b&gt;Booked&lt;/b&gt;” from the Top Path and Click &amp;#39;Mark Stage as Complete&amp;#39;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>100% Booked</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Please add your products&lt;/li&gt;&lt;li&gt;Add Print Media Products using EDIT IO Button on Products&lt;/li&gt;&lt;li&gt;I/O Products are revenue scheduled automatically&lt;/li&gt;&lt;li&gt;Budget Splits will be calculated based on the type of product&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>25% What&apos;s out there</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Media_Strategist__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Submit Opportunity for &lt;b&gt;&lt;u&gt;Position Approval&lt;/u&gt;&lt;/b&gt; to Check Print Media Availability with Ad Control Team&lt;/li&gt;&lt;li&gt;Proposal with the client&lt;/li&gt;&lt;li&gt;Liaise with internal teams and client to finalise proposal&lt;/li&gt;&lt;li&gt;Update Close Date if needed. Edit Revenue Schedules from Products related list&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>50% Planned</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>PO_Required__c</fieldNames>
+        <fieldNames>PO_Number__c</fieldNames>
+        <fieldNames>PO_Not_Required__c</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Positions agreed for media&lt;/li&gt;&lt;li&gt;Submit the Opportunity for &lt;b&gt;&lt;u&gt;Discount Approval&lt;/u&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Contract process (For Content, Careers and Integrated deals only)&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Establish the invoice schedule on the content product(s)&lt;/li&gt;&lt;li&gt;Add your Contact Roles (contract and billing contacts)&lt;/li&gt;&lt;li&gt;Generate contract from opportunity using Mail Merge.&lt;/li&gt;&lt;li&gt;For integrated deals billing must be clearly defined in the contract or by email as to whether the client / agency requires a separate invoice for media and content, or an invoice containing all products&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>75% Pipeline</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Send contract to client&lt;/li&gt;&lt;li&gt;Awaiting final client confirmation&lt;/li&gt;&lt;li&gt;Once received, upload relevant documentation to Salesforce&lt;/li&gt;&lt;li&gt;&lt;b&gt;If you need to change Close Date and your opportunity has revenue schedules, please update schedule dates.&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>90% Confirmed</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>EMBOpp</recordTypeName>
+</PathAssistant>

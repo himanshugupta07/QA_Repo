@@ -1,0 +1,247 @@
+<!--
+  @Component Name     : datePicker3.cmp
+  @Description        : 
+  @Author             : Himanshu Gupta
+  @Group              : 
+  @Last Modified By   : Himanshu Gupta
+  @Last Modified On   : 8/8/2019, 12:00:48 PM
+  @Modification Log   : 
+  ==============================================================================
+  Ver         Date                     Author      		      Modification
+  ==============================================================================
+  1.0    8/8/2019, 12:00:48 PM   Himanshu Gupta     Initial Version
+-->
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global" controller="EmbProdOliHandler">
+    <aura:attribute name="selDate" type="Date" access="global"/>
+    <aura:attribute name="mnthsrtDay" type="String" access="global"/>
+    <aura:attribute name="day" type="Integer" access="global" />
+    <aura:attribute name="month" type="String" access="global" />
+    <aura:attribute name="year" type="Integer" access="global" />
+    <aura:attribute name="daysinMnth" type="Integer" access="global"/>
+    <aura:attribute name="publication" type="String" access="global" />
+    <!-- Initialisation -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!-- Register Event -->
+    <aura:registerEvent name="isueDate" type="c:isueDate"/>
+    <!-- Handle Event -->
+    <aura:handler name="dateDay" event="c:dateDay" action="{!c.handleSelection}"/>
+    <aura:handler name="parseDate" event="c:parseDate" action="{!c.updateSelection}"/>
+    <div>
+        <div class="slds-form-element slds-dropdown-trigger">
+            <label class="slds-form-element__label" for="date-input-id">Issue Date</label>
+            <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+                    <input id="date-input-id" placeholder=" " class="slds-input" type="text" value="{!v.selDate}" onclick="{!c.showdatePicker}"/>
+            </div>
+            <div aura:id="datePicker" class="slds-panel" style="" display="none">
+                <div aria-hidden="false" aria-label="Date picker" class="slds-datepicker slds-dropdown slds-dropdown_left" role="dialog">
+                    <aura:if isTrue="{!or((v.publication == 'The Economist Newspaper'),(v.publication == 'Espresso'))}">
+                        <div class="slds-datepicker__filter slds-grid">
+                            <div class="slds-datepicker__filter_month slds-grid slds-grid_align-spread slds-grow"> 
+                                <div class="slds-align-middle">
+                                    <button class="slds-button slds-button_icon slds-button_icon-container" title="Previous Month" onclick= "{!c.monthChangelt}">
+                                        &lt;
+                                        <span class="slds-assistive-text">Previous Month</span>
+                                    </button>
+                                </div>
+                                <h2 aria-atomic="true" aria-live="assertive" class="slds-align-middle" id="month">{!v.month}</h2>
+                                <div class="slds-align-middle">
+                                    <button class="slds-button slds-button_icon slds-button_icon-container" title="Next Month" onclick= "{!c.monthChangegt}">
+                                        &gt;
+                                        <span class="slds-assistive-text">Next Month</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slds-shrink-none">
+                                <div class="slds-select_container">
+                                    <button class="slds-button slds-button_icon slds-button_icon-container" title="Previous Year" onclick= "{!c.yearlt}">
+                                        <span class="slds-assistive-text">Previous Year</span>
+                                    </button>
+                                    <h2 aria-atomic="true" aria-live="assertive" class="slds-align-middle" id="year">{!v.year}</h2>
+                                    <button class="slds-button slds-button_icon slds-button_icon-container" title="Next Year" onclick= "{!c.yeargt}">
+                                        <span class="slds-assistive-text">Next Year</span>
+                                    </button>
+                                </div>
+                            </div> 
+                        </div>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Mon'}">
+                            <div aura:id="MonthStartOnMonday">
+                                <c:MonthStartonMonday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Tue'}">
+                            <div aura:id="MonthStartOnTuesday">
+                                <c:MonthStartonTuesday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Wed'}">
+                            <div aura:id="MonthStartOnWednesday">
+                                <c:MonthStartonWednesday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Thu'}">
+                            <div aura:id="MonthStartOnThursday">
+                                <c:MonthStartonThursday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Fri'}">
+                            <div aura:id="MonthStartOnFriday">
+                                <c:MonthStartonFriday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Sat'}">
+                            <div aura:id="MonthStartOnSaturday" >
+                                <c:MonthStartonSaturday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Sun'}">
+                            <div aura:id="MonthStartOnSunday" >
+                                <c:MonthStartonSunday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                    </aura:if>
+                    <aura:if isTrue="{!or((v.publication == 'GBR'),(v.publication == 'The Economist Digital Editions'))}">
+                        <div class="slds-datepicker__filter slds-grid">
+                            <div class="slds-datepicker__filter_month slds-grid slds-grid_align-spread slds-grow"> 
+                                <div class="slds-align-middle">
+                                    <button class="slds-button slds-button_icon slds-button_icon-container" title="Previous Month" onclick= "{!c.monthChangelt}">
+                                        &lt;
+                                        <span class="slds-assistive-text">Previous Month</span>
+                                    </button>
+                                </div>
+                                <h2 aria-atomic="true" aria-live="assertive" class="slds-align-middle" id="month">{!v.month}</h2>
+                                <div class="slds-align-middle">
+                                    <button class="slds-button slds-button_icon slds-button_icon-container" title="Next Month" onclick= "{!c.monthChangegt}">
+                                        &gt;
+                                        <span class="slds-assistive-text">Next Month</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slds-shrink-none">
+                                <div class="slds-select_container">
+                                    <button class="slds-button slds-button_icon slds-button_icon-container" title="Previous Year" onclick= "{!c.yearlt}">
+                                        <span class="slds-assistive-text">Previous Year</span>
+                                    </button>
+                                    <h2 aria-atomic="true" aria-live="assertive" class="slds-align-middle" id="year">{!v.year}</h2>
+                                    <button class="slds-button slds-button_icon slds-button_icon-container" title="Next Year" onclick= "{!c.yeargt}">
+                                        <span class="slds-assistive-text">Next Year</span>
+                                    </button>
+                                </div>
+                            </div> 
+                        </div>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Mon'}">
+                            <div aura:id="MonthStartOnMonday">
+                                <c:MonthStartonMonday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Tue'}">
+                            <div aura:id="MonthStartOnTuesday">
+                                <c:MonthStartonTuesday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Wed'}">
+                            <div aura:id="MonthStartOnWednesday">
+                                <c:MonthStartonWednesday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Thu'}">
+                            <div aura:id="MonthStartOnThursday">
+                                <c:MonthStartonThursday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Fri'}">
+                            <div aura:id="MonthStartOnFriday">
+                                <c:MonthStartonFriday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Sat'}">
+                            <div aura:id="MonthStartOnSaturday" >
+                                <c:MonthStartonSaturday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Sun'}">
+                            <div aura:id="MonthStartOnSunday">
+                                <c:MonthStartonSunday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                    </aura:if>
+                    <aura:if isTrue="{!or((v.publication == '1843'),(v.publication == 'The World In'))}">
+                        <div aura:id="1843">
+                            <c:datePicker1843 publication="{!v.publication}"/>
+                        </div>
+                    </aura:if>
+                    <aura:if isTrue="{!or((v.publication == '1843 Supplement'))}">
+                        <div aura:id="1843">
+                            <c:datePicker1843 publication="{!v.publication}"/>
+                        </div>
+                    </aura:if>
+                    <aura:if isTrue="{!or((v.publication == 'Economist Films'))}">
+                        <div class="slds-datepicker__filter slds-grid">
+                            <div class="slds-datepicker__filter_month slds-grid slds-grid_align-spread slds-grow"> 
+                                <div class="slds-align-middle">
+                                    <button class="slds-button slds-button_icon slds-button_icon-container" title="Previous Month" onclick= "{!c.monthChangelt}">
+                                        &lt;
+                                        <span class="slds-assistive-text">Previous Month</span>
+                                    </button>
+                                </div>
+                                <h2 aria-atomic="true" aria-live="assertive" class="slds-align-middle" id="month">{!v.month}</h2>
+                                <div class="slds-align-middle">
+                                    <button class="slds-button slds-button_icon slds-button_icon-container" title="Next Month" onclick= "{!c.monthChangegt}">
+                                        &gt;
+                                        <span class="slds-assistive-text">Next Month</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="slds-shrink-none">
+                                <div class="slds-select_container">
+                                    <button class="slds-button slds-button_icon slds-button_icon-container" title="Previous Year" onclick= "{!c.yearlt}">
+                                        <span class="slds-assistive-text">Previous Year</span>
+                                    </button>
+                                    <h2 aria-atomic="true" aria-live="assertive" class="slds-align-middle" id="year">{!v.year}</h2>
+                                    <button class="slds-button slds-button_icon slds-button_icon-container" title="Next Year" onclick= "{!c.yeargt}">
+                                        <span class="slds-assistive-text">Next Year</span>
+                                    </button>
+                                </div>
+                            </div> 
+                        </div>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Mon'}">
+                            <div aura:id="MonthStartOnMonday">
+                                <c:MonthStartonMonday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Tue'}">
+                            <div aura:id="MonthStartOnTuesday">
+                                <c:MonthStartonTuesday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Wed'}">
+                            <div aura:id="MonthStartOnWednesday">
+                                <c:MonthStartonWednesday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Thu'}">
+                            <div aura:id="MonthStartOnThursday">
+                                <c:MonthStartonThursday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Fri'}">
+                            <div aura:id="MonthStartOnFriday">
+                                <c:MonthStartonFriday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Sat'}">
+                            <div aura:id="MonthStartOnSaturday" >
+                                <c:MonthStartonSaturday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.mnthsrtDay == 'Sun'}">
+                            <div aura:id="MonthStartOnSunday">
+                                <c:MonthStartonSunday today="{!v.day}" mnthDays="{!v.daysinMnth}" publication="{!v.publication}"/>
+                            </div>
+                        </aura:if>
+                    </aura:if>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

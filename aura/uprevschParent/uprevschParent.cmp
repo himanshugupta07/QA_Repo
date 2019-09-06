@@ -1,0 +1,99 @@
+<aura:component 
+                implements="flexipage:availableForRecordHome,force:hasRecordId,lightning:isUrlAddressable" 
+                access="global"
+                controller="EmbProdOliHandler">
+    
+    <aura:attribute name="rowCounter" type="Integer" default="0" access="global"/>
+    <aura:attribute name="rowCount" type="Integer[]" default="0" access="global"/>
+    <aura:attribute name="oliList" type="OpportunityLineItem[]" access="global" />
+    <aura:attribute name="oppId" type="String" access="global" />  
+    <aura:attribute name="isSuccess" type="boolean" default="FALSE" />
+    <aura:attribute name="opcurncy" type="String" access="global" />
+    <aura:attribute name="Spinner" type="boolean" default="false" />
+    <aura:attribute name="closeDate" type="date" access="global" />
+    <aura:attribute name="IOTool" type="Aura.Component[]">
+        <h2>
+            <b>Edit Revenue Schedule Dates</b>
+        </h2>
+    </aura:attribute>
+    <!-- Register Event -->
+    <aura:handler name="RowID" event="c:RowID" action="{!c.handleSplit1}" />
+    
+    <!-- Initialisation -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    
+    <!-- Global Buttons -->
+    <div aura:Id="edit" style="width:100%">
+        <lightning:card
+                        class="slds-card_boundary slds-border_top size-xx-large"
+                        iconName="standard:product"
+                        title= "{!v.IOTool}"
+                        > 
+            <lightning:layout horizontalAlign="center">
+                <lightning:layoutItem padding="around-small">
+                    <div class="clsDate">
+                        <lightning:input type="date" name="closeDate" label="Close Date" value="{!v.closeDate}" onchange="{! c.addrevscheditor }"/>
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small">
+                    <lightning:button
+                                      variant="brand"
+                                      label="Save"
+                                      title="Save"
+                                      onclick="{! c.handleSave }"
+                                      />
+                </lightning:layoutItem>
+                <lightning:layoutItem padding="around-small">
+                    <lightning:button
+                                      variant="destructive"
+                                      label="Cancel"
+                                      title="Cancel"
+                                      onclick="{! c.handleCancel }"
+                                      />
+                </lightning:layoutItem>
+            </lightning:layout>
+            
+            <aura:iteration items="{!v.oliList}" var="item" indexVar="i">
+                <span data-index="{!i}"></span>
+                <c:updateRevSchv2
+                                  rowId="{!i}"
+                                  oli="{!item}"
+                                  oppId="{!v.oppId}"
+                                  oliId="{!item.Id }"
+                                  crncy="{!v.opcurncy}"
+                                  disable="true"/>
+            </aura:iteration>
+            <!-- Global Buttons -->
+            <lightning:layout horizontalAlign="center">
+                    <lightning:layoutItem padding="around-small">
+                        
+                        <lightning:button
+                                          variant="brand"
+                                          label="Save"
+                                          title="Save"
+                                          onclick="{! c.handleSave }"
+                                          />
+                    </lightning:layoutItem>
+                    <lightning:layoutItem padding="around-small">
+                        <lightning:button
+                                          variant="destructive"
+                                          label="Cancel"
+                                          title="Cancel"
+                                          onclick="{! c.handleCancel }"
+                                          />
+                    </lightning:layoutItem>
+            </lightning:layout>
+        </lightning:card>
+    </div>
+    <!-- SPINNER -->
+    <div aura:id="spinnerId" class="slds-spinner_container">
+        <div
+             class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative"
+             role="alert"
+             >
+            <span class="slds-assistive-text">Saving</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+</aura:component>

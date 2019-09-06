@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Barter_Deal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>BET-455 Barter Deal.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box, if it is a barter deal.</inlineHelpText>
+        <label>Barter Deal?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EuroFinanceSubtotal__c</fullName>
+        <externalId>false</externalId>
+        <label>EuroFinance Subtotal</label>
+        <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.ProductGroup__c</field>
+            <operation>equals</operation>
+            <value>EuroFinance</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>OtherSubtotal__c</fullName>
+        <description>Eleanor Matthewman 20160621: Rolls up the price of all Other products on the opportunity</description>
+        <externalId>false</externalId>
+        <label>Other Subtotal</label>
+        <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.ProductGroup__c</field>
+            <operation>notEqual</operation>
+            <value>Media</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.ProductGroup__c</field>
+            <operation>notEqual</operation>
+            <value>Content</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.ProductGroup__c</field>
+            <operation>notEqual</operation>
+            <value>Events</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.ProductGroup__c</field>
+            <operation>notEqual</operation>
+            <value>TVC, Signal Noise, EuroFinance</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SignalNoiseSubtotal__c</fullName>
+        <externalId>false</externalId>
+        <label>Signal Noise Subtotal</label>
+        <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.ProductGroup__c</field>
+            <operation>equals</operation>
+            <value>Signal Noise</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>TVCSubtotal__c</fullName>
+        <externalId>false</externalId>
+        <label>TVC Subtotal</label>
+        <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.ProductGroup__c</field>
+            <operation>equals</operation>
+            <value>TVC</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>EuroFinanceBudget__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>The percentage of the opportunity that relates to EuroFiance products.</inlineHelpText>
+        <label>EuroFinance Budget</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>OtherBudget__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Eleanor Matthewman 20160621: Created as part of the EMB restructure combining Ads Sales process with the Content &amp; Events process</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The percentage of the opportunity that relates to careers and other products.</inlineHelpText>
+        <label>Other Budget</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SignalNoiseBudget__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>The percentage of the opportunity that relates to Signal Noise products.</inlineHelpText>
+        <label>Signal Noise Budget</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>TVCBudget__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>TVC Budget</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Barter_Total_Value__c</fullName>
+        <description>BET-455 Barter Deal Project</description>
+        <externalId>false</externalId>
+        <label>Barter Total Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Full_Discount_w_Guaranteed_Date__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Full Discount w Guaranteed Date</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IO_Opportunity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>IO Opportunity</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IO_Overall_Discount__c</fullName>
+        <externalId>false</externalId>
+        <formula>if((IO_SubTotal__c&gt;0),(((IO_SubTotal__c - IO_Total__c) / IO_SubTotal__c)),0)</formula>
+        <label>Print Media Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>IO_SubTotal__c</fullName>
+        <description>Sub Total only IO Line Items</description>
+        <externalId>false</externalId>
+        <label>IO SubTotal</label>
+        <summarizedField>OpportunityLineItem.UnitPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Print_IO__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+        <fields>
+        <fullName>EuroFinance_Split__c</fullName>
+        <externalId>false</externalId>
+        <formula>If ( Number_of_Opportunity_Products__c &lt; 1, 
+Amount * EuroFinanceBudget__c, 
+EuroFinanceSubtotal__c 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The calculated amount for the EuroFinance budget based on total opportunity amount and EuroFinance split.</inlineHelpText>
+        <label>EuroFinance Split</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Signal_Noise_Split__c</fullName>
+        <externalId>false</externalId>
+        <formula>If ( Number_of_Opportunity_Products__c &lt; 1, 
+Amount * SignalNoiseBudget__c, 
+SignalNoiseSubtotal__c 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The calculated amount for the Signal Noise budget based on total opportunity amount and Signal Noise split.</inlineHelpText>
+        <label>Signal Noise Split</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TVC_Split__c</fullName>
+        <externalId>false</externalId>
+        <formula>If ( Number_of_Opportunity_Products__c &lt; 1,
+   Amount *  TVCBudget__c,
+    TVCSubtotal__c 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The calculated amount for the TVC budget based on total opportunity amount and TVC split.</inlineHelpText>
+        <label>TVC Split</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>IO_Total__c</fullName>
+        <description>Total IO products only</description>
+        <externalId>false</externalId>
+        <label>IO Total</label>
+        <summarizedField>OpportunityLineItem.TotalPrice</summarizedField>
+        <summaryFilterItems>
+            <field>OpportunityLineItem.Print_IO__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </summaryFilterItems>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>IO_Updated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>IO Updated</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Contract_Loaded__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>https://jira.economist.com/browse/BET-508</description>
+        <externalId>false</externalId>
+        <label>Is Contract Loaded</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Position_Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Position Approved</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Re_Opened__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Is Re-Opened</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Overall_Discount__c</fullName>
+        <description>Case 00007194 - 22-Mar-2012 - Chris Kelsey</description>
+        <externalId>false</externalId>
+        <formula>( Sum_of_Subtotal__c - Amount) / Sum_of_Subtotal__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opp Overall Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SendPDF__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>SendPDF</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Territory_Name_c__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(CONTAINS(Record_Type_Name__c, &apos;EMB&apos;) , EIU_Sales_Agent__r.R_Code__c,  Territory.Name)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Territory Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <recordTypes>
+        <fullName>EMBOpp</fullName>
+        <active>true</active>
+        <businessProcess>EMB Sales Process</businessProcess>
+        <description>Used for Media and event</description>
+        <label>EMB Opp</label>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Client Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Call by Sales</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Conference Delegate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Desk Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Mail</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct Mail Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Economist Ad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Economist Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Economist%2Ecom Ad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Editorial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Editorial Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Global Outlook Conference</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GoldMine%2FC4 Legacy System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inbound Call %28They Called You%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inbound Email %28They Emailed Us%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Key account mapping</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Ad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Source%2FUnknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outbound Email Response</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TactTree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website Form</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Customer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <validationRules>
+        <fullName>Contract_required_for_Content_Products</fullName>
+        <active>true</active>
+        <description>https://jira.economist.com/browse/BET-508</description>
+        <errorConditionFormula>AND((Content_Split__c &gt;0),(NOT(Is_Contract_Loaded__c)),(Probability&gt;=0.91))</errorConditionFormula>
+        <errorMessage>Please Upload Contract for the Opportunity!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EMB_Budget_Split_Equals_100</fullName>
+        <active>true</active>
+        <description>Created as part of EMB Restructure: To ensure the percentage put in the budget split section always adds up to 100%</description>
+        <errorConditionFormula>ROUND(ContentBudget__c + EventsBudget__c + MediaBudget__c +  TVCBudget__c + SignalNoiseBudget__c + EuroFinanceBudget__c + OtherBudget__c, 2)  &lt;&gt; 1
+&amp;&amp;  RecordType.DeveloperName = &apos;EMBOpp&apos;
+&amp;&amp;  Amount &gt; 0
+&amp;&amp;  Number_of_Opportunity_Products__c = 0</errorConditionFormula>
+        <errorMessage>The budget splits must always add up to 100%</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>EMB_Budget_Split_with_Product</fullName>
+        <active>true</active>
+        <errorConditionFormula>Number_of_Opportunity_Products__c &gt; 0 
+&amp;&amp; OR( 
+ISCHANGED( MediaBudget__c ) , 
+ISCHANGED( ContentBudget__c ), 
+ISCHANGED( EventsBudget__c ), 
+ISCHANGED( TVCBudget__c ),
+ISCHANGED( SignalNoiseBudget__c ), 
+ISCHANGED( EuroFinanceBudget__c ),
+ISCHANGED( OtherBudget__c ))</errorConditionFormula>
+        <errorDisplayField>Rev_to_other_regions__c</errorDisplayField>
+        <errorMessage>You cannot manually adjust the budget splits after products have been added.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Position_Approval_Required</fullName>
+        <active>true</active>
+        <description>Request Positon Approval</description>
+        <errorConditionFormula>AND(Probability&gt;=0.7, Is_Position_Approved__c == FALSE, IO_Opportunity__c == TRUE)</errorConditionFormula>
+        <errorMessage>Please submit the opportunity for Position Approval before moving to next stage.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Product_Required</fullName>
+        <active>true</active>
+        <description>Product must be entered</description>
+        <errorConditionFormula>OR(
+AND(ISPICKVAL(Sales_Department__c , &quot;Corporate Network&quot;),Probability &gt; 0.1, Number_of_Opportunity_Products__c =0),
+AND(RecordType.DeveloperName=&apos;EMBOpp&apos;,NOT(ISPICKVAL(Sales_Department__c,&apos;Event&apos;)),Number_of_Opportunity_Products__c =0 , 
+Probability &gt;= 0.5, IO_Opportunity__c != TRUE),
+AND(OR($RecordType.Name = &apos;EIU - Opp&apos;,$RecordType.Name = &apos;EIU - Telemarketing Opportunity&apos;) , Probability &gt; 0.1, Number_of_Opportunity_Products__c =0, TEXT(Type) = &apos;New&apos; ),
+AND(OR($RecordType.Name = &apos;EIU - Opp&apos;,$RecordType.Name = &apos;EIU - Telemarketing Opportunity&apos;) , Probability &gt; 0.9, Number_of_Opportunity_Products__c =0, TEXT(Type) = &apos;Renewal&apos; ),
+AND($RecordType.Name = &apos;EIU - Opp&apos;, Request_Contract__c = TRUE, Number_of_Opportunity_Products__c = 0)
+)</errorConditionFormula>
+        <errorMessage>Please add a Product</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Request_for_Proposal</fullName>
+        <active>true</active>
+        <description>When a &quot;request for proposal&quot; field is selected, the Proposal Due Date is required.</description>
+        <errorConditionFormula>AND(Request_for_Proposal__c = True, ISBLANK(Proposal_Due_Date__c))</errorConditionFormula>
+        <errorDisplayField>Proposal_Due_Date__c</errorDisplayField>
+        <errorMessage>Please enter the required &quot;Proposal Due Date&quot; as a request for proposal has been initiated.</errorMessage>
+    </validationRules>
+</CustomObject>

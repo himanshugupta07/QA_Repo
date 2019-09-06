@@ -1,0 +1,29 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                access="global" 
+                controller="EmbProdOliHandler">
+    <!-- Attributes -->
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="oppName" type="String" />
+    <aura:attribute name="status" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!--Markup-->
+    <div style="height: 4rem;">
+        <div class="slds-notify_container slds-is-relative">
+            <div class="slds-notify slds-notify_toast slds-theme_error" role="status">
+                <span class="slds-assistive-text">Error Saving</span>
+                <span class="slds-icon_container slds-icon-utility-success slds-m-right_small slds-no-flex slds-align-top" title="Description of icon when needed">
+                </span>
+                <aura:if isTrue="{!v.status == 'FALSE'}">
+                    <div class="slds-notify__content">
+                        <h2 class="slds-text-heading_small ">Error Saving {!v.oppName}. Please Refresh the Page and Try saving again.<br/> Alternatively, Contact Administrator.</h2>
+                    </div>
+                </aura:if>
+                <div class="slds-notify__close">
+                    <button class="slds-button slds-button_icon slds-button_icon-inverse" title="Close">
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

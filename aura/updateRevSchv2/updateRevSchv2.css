@@ -1,0 +1,51 @@
+.THIS .newLabel {
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    font-family: 'Salesforce Sans',Arial,sans-serif;
+    color: #3E3E3C;
+}
+
+.THIS .newLabel label.slds-form-element__label {
+    display: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: 0.125rem;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    font-family: 'Salesforce Sans',Arial,sans-serif;
+    color: #3E3E3C;
+}
+
+.THIS .newLabel .slds-form-element .slds-dropdown-trigger{
+    margin-top: 0.25rem;
+    margin-left: -0.25rem;
+    font-size: 0.75rem;
+    font-family: 'Salesforce Sans',Arial,sans-serif;
+    color: #3E3E3C;
+}
+
+.THIS .price .slds-form-element_stacked .slds-form-element{
+    margin-top: -0.1rem;
+}
+
+.THIS .price .slds-form-element{
+    margin-top: -0.1rem;
+}
+
+.THIS .newLabel1 {
+    margin-top: 0.3rem;
+    font-size: 0.75rem;
+    font-family: 'Salesforce Sans',Arial,sans-serif;
+    color: #3E3E3C;
+}
+
+.THIS .newLabel1 label.slds-form-element__label {
+    display: none;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin-bottom: 0.125rem;
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    font-family: 'Salesforce Sans',Arial,sans-serif;
+    color: #3E3E3C;
+}

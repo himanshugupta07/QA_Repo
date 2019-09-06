@@ -1,0 +1,6 @@
+Following Opportunity has position(s) ready for approval: 
+
+{!OpportunityLineItem.Publication__c} {!OpportunityLineItem.Platform__c} {!OpportunityLineItem.Edition__c} {!OpportunityLineItem.Ad_Size__c} {!OpportunityLineItem.Issue_Date__c}
+
+{!Quote.Description}
+Link to Opportunity : 006/{!Opportunity.Id}

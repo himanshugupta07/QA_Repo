@@ -1,0 +1,15 @@
+.THIS myWidth{
+    width:100%;
+}
+.THIS .groupsale .slds-form-element__help{
+    padding-left: 2rem;
+}
+.THIS .groupsale .slds-form-element__label{
+    float: left;
+}
+.THIS .groupsale .slds-form-element__control{
+    float: left;
+    clear: none;
+    margin-left: 0.5rem;
+    min-width: 5rem;
+}

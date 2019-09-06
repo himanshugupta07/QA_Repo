@@ -1,0 +1,16 @@
+Hi, 
+
+You are receiving this email alert as an approval request to approve discount on the opportunity. Please find below the opportunity details:
+
+Account: {!Opportunity.Account}
+Opportunity Name: {!Opportunity.Name} 
+Close Date: {!Opportunity.CloseDate} 
+Stage: {!Opportunity.StageName} 
+Order Number: {!Opportunity.Order_Number__c}
+{!IF( Opportunity.IO_Opportunity__c, "Overall Discount (IO Products): " + TEXT(Opportunity.IO_Overall_Discount__c*100) + "%", "") }
+Total Amount: {!Opportunity.Amount}
+
+Link to Opportunity: {!Opportunity.Link}
+
+This email was sent to you on behalf of the Salesforce support team
+salesforcesupport@economist.com

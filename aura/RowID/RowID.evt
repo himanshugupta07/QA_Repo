@@ -1,0 +1,6 @@
+<!-- RowID Event to post Oli and OliId between Productfield and oppProductEditor -->
+<aura:event type="COMPONENT" description="Event template">
+	<aura:attribute name="rowToDel" type="Integer"/>
+    <aura:attribute name="isDuplicate" type="String"/>
+    <aura:attribute name="thisOli" type="OpportunityLineItem" />
+</aura:event>

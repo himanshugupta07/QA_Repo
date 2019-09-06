@@ -1,0 +1,2214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Ad_Size__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Price will only be updated when you change Ad Size</inlineHelpText>
+        <label>Ad Size</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Platform__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1/2 Page Classified</fullName>
+                    <default>false</default>
+                    <label>1/2 Page Classified</label>
+                </value>
+                <value>
+                    <fullName>1/2 Page Horizontal</fullName>
+                    <default>false</default>
+                    <label>1/2 Page Horizontal</label>
+                </value>
+                <value>
+                    <fullName>1/2 Page Vertical</fullName>
+                    <default>false</default>
+                    <label>1/2 Page Vertical</label>
+                </value>
+                <value>
+                    <fullName>1/3 DPS under Financial Indicators</fullName>
+                    <default>false</default>
+                    <label>1/3 DPS under Financial Indicators</label>
+                </value>
+                <value>
+                    <fullName>1/3 page horizontal</fullName>
+                    <default>false</default>
+                    <label>1/3 page horizontal</label>
+                </value>
+                <value>
+                    <fullName>1/3 Page under Financial Indicators</fullName>
+                    <default>false</default>
+                    <label>1/3 Page under Financial Indicators</label>
+                </value>
+                <value>
+                    <fullName>1/3 Page Vertical</fullName>
+                    <default>false</default>
+                    <label>1/3 Page Vertical</label>
+                </value>
+                <value>
+                    <fullName>1/3rd page Classified</fullName>
+                    <default>false</default>
+                    <label>1/3rd page Classified</label>
+                </value>
+                <value>
+                    <fullName>1/4 Page</fullName>
+                    <default>false</default>
+                    <label>1/4 Page</label>
+                </value>
+                <value>
+                    <fullName>1/4 page Classified</fullName>
+                    <default>false</default>
+                    <label>1/4 page Classified</label>
+                </value>
+                <value>
+                    <fullName>1/4 page in Letters</fullName>
+                    <default>false</default>
+                    <label>1/4 page in Letters</label>
+                </value>
+                <value>
+                    <fullName>3/4 page in Letters</fullName>
+                    <default>false</default>
+                    <label>3/4 page in Letters</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/2 Page Horizontal</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/2 Page Horizontal</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/2 Page Horizontal Appointments</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/2 Page Horizontal Appointments</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/2 Page Horizontal Courses</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/2 Page Horizontal Courses</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/2 Page Horizontal Executive Focus</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/2 Page Horizontal Executive Focus</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/2 Page Horizontal Property</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/2 Page Horizontal Property</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/2 Page Horizontal Tenders</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/2 Page Horizontal Tenders</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/2 Page Vertical</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/2 Page Vertical</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/2 Page Vertical Appointments</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/2 Page Vertical Appointments</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/2 Page Vertical Courses</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/2 Page Vertical Courses</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/2 Page Vertical Executive Focus</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/2 Page Vertical Executive Focus</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/2 Page Vertical Property</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/2 Page Vertical Property</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/2 Page Vertical Tenders</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/2 Page Vertical Tenders</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/4 Page</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/4 Page</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/4 Page Appointments</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/4 Page Appointments</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/4 Page Courses</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/4 Page Courses</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/4 Page Executive Focus</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/4 Page Executive Focus</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/4 Page Property</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/4 Page Property</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/4 Page Tenders</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/4 Page Tenders</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/8 Page  Horizontal Property</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/8 Page  Horizontal Property</label>
+                </value>
+                <value>
+                    <fullName>4Colour 1/8 Page  Vertical Property</fullName>
+                    <default>false</default>
+                    <label>4Colour 1/8 Page  Vertical Property</label>
+                </value>
+                <value>
+                    <fullName>4Colour Page</fullName>
+                    <default>false</default>
+                    <label>4Colour Page</label>
+                </value>
+                <value>
+                    <fullName>4Colour Page Appointments</fullName>
+                    <default>false</default>
+                    <label>4Colour Page Appointments</label>
+                </value>
+                <value>
+                    <fullName>4Colour Page Courses</fullName>
+                    <default>false</default>
+                    <label>4Colour Page Courses</label>
+                </value>
+                <value>
+                    <fullName>4Colour Page Executive Focus</fullName>
+                    <default>false</default>
+                    <label>4Colour Page Executive Focus</label>
+                </value>
+                <value>
+                    <fullName>4Colour Page Property</fullName>
+                    <default>false</default>
+                    <label>4Colour Page Property</label>
+                </value>
+                <value>
+                    <fullName>4Colour Page Tenders</fullName>
+                    <default>false</default>
+                    <label>4Colour Page Tenders</label>
+                </value>
+                <value>
+                    <fullName>4Colour Single Columns cm</fullName>
+                    <default>false</default>
+                    <label>4Colour Single Columns cm</label>
+                </value>
+                <value>
+                    <fullName>4Colour Single Columns cm Appointments</fullName>
+                    <default>false</default>
+                    <label>4Colour Single Columns cm Appointments</label>
+                </value>
+                <value>
+                    <fullName>4Colour Single Columns cm Courses</fullName>
+                    <default>false</default>
+                    <label>4Colour Single Columns cm Courses</label>
+                </value>
+                <value>
+                    <fullName>4Colour Single Columns cm Tenders</fullName>
+                    <default>false</default>
+                    <label>4Colour Single Columns cm Tenders</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/2 Page  Horizontal</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/2 Page  Horizontal</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/2 Page  Horizontal Appointments</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/2 Page  Horizontal Appointments</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/2 Page  Horizontal Courses</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/2 Page  Horizontal Courses</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/2 Page  Horizontal Executive Focus</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/2 Page  Horizontal Executive Focus</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/2 Page  Horizontal Property</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/2 Page  Horizontal Property</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/2 Page  Horizontal Tenders</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/2 Page  Horizontal Tenders</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/2 Page Vertical</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/2 Page Vertical</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/2 Page Vertical Appointments</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/2 Page Vertical Appointments</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/2 Page Vertical Courses</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/2 Page Vertical Courses</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/2 Page Vertical Executive Focus</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/2 Page Vertical Executive Focus</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/2 Page Vertical Property</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/2 Page Vertical Property</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/2 Page Vertical Tenders</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/2 Page Vertical Tenders</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/4 Page</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/4 Page</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/4 Page Appointments</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/4 Page Appointments</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/4 Page Courses</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/4 Page Courses</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/4 Page Executive Focus</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/4 Page Executive Focus</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/4 Page Property</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/4 Page Property</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/4 Page Tenders</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/4 Page Tenders</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/8 Page  Horizontal Property</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/8 Page  Horizontal Property</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W 1/8 Page  Vertical Property</fullName>
+                    <default>false</default>
+                    <label>B&amp;W 1/8 Page  Vertical Property</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W Page</fullName>
+                    <default>false</default>
+                    <label>B&amp;W Page</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W Page Appointments</fullName>
+                    <default>false</default>
+                    <label>B&amp;W Page Appointments</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W Page Courses</fullName>
+                    <default>false</default>
+                    <label>B&amp;W Page Courses</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W Page Executive Focus</fullName>
+                    <default>false</default>
+                    <label>B&amp;W Page Executive Focus</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W Page Property</fullName>
+                    <default>false</default>
+                    <label>B&amp;W Page Property</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W Page Tenders</fullName>
+                    <default>false</default>
+                    <label>B&amp;W Page Tenders</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W Single Columns cm</fullName>
+                    <default>false</default>
+                    <label>B&amp;W Single Columns cm</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W Single Columns cm Appointments</fullName>
+                    <default>false</default>
+                    <label>B&amp;W Single Columns cm Appointments</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W Single Columns cm Courses</fullName>
+                    <default>false</default>
+                    <label>B&amp;W Single Columns cm Courses</label>
+                </value>
+                <value>
+                    <fullName>B&amp;W Single Columns cm Tenders</fullName>
+                    <default>false</default>
+                    <label>B&amp;W Single Columns cm Tenders</label>
+                </value>
+                <value>
+                    <fullName>Bookends in Letters</fullName>
+                    <default>false</default>
+                    <label>Bookends in Letters</label>
+                </value>
+                <value>
+                    <fullName>Branded</fullName>
+                    <default>false</default>
+                    <label>Branded</label>
+                </value>
+                <value>
+                    <fullName>Carrier Sheets</fullName>
+                    <default>false</default>
+                    <label>Carrier Sheets</label>
+                </value>
+                <value>
+                    <fullName>Change to correct edition</fullName>
+                    <default>false</default>
+                    <label>Change to correct edition</label>
+                </value>
+                <value>
+                    <fullName>Combined Audience</fullName>
+                    <default>false</default>
+                    <label>Combined Audience</label>
+                </value>
+                <value>
+                    <fullName>Commissioned</fullName>
+                    <default>false</default>
+                    <label>Commissioned</label>
+                </value>
+                <value>
+                    <fullName>Cover</fullName>
+                    <default>false</default>
+                    <label>Cover</label>
+                </value>
+                <value>
+                    <fullName>Cover Wraps</fullName>
+                    <default>false</default>
+                    <label>Cover Wraps</label>
+                </value>
+                <value>
+                    <fullName>Double Page Spread</fullName>
+                    <default>false</default>
+                    <label>Double Page Spread</label>
+                </value>
+                <value>
+                    <fullName>Double Page Spread w/ Gurantee</fullName>
+                    <default>false</default>
+                    <label>Double Page Spread w/ Gurantee</label>
+                </value>
+                <value>
+                    <fullName>Facing Contents</fullName>
+                    <default>false</default>
+                    <label>Facing Contents</label>
+                </value>
+                <value>
+                    <fullName>Facing Contributors</fullName>
+                    <default>false</default>
+                    <label>Facing Contributors</label>
+                </value>
+                <value>
+                    <fullName>Facing Masthead</fullName>
+                    <default>false</default>
+                    <label>Facing Masthead</label>
+                </value>
+                <value>
+                    <fullName>Film</fullName>
+                    <default>false</default>
+                    <label>Film</label>
+                </value>
+                <value>
+                    <fullName>Fireplace under Letters</fullName>
+                    <default>false</default>
+                    <label>Fireplace under Letters</label>
+                </value>
+                <value>
+                    <fullName>First spread after Contents</fullName>
+                    <default>false</default>
+                    <label>First spread after Contents</label>
+                </value>
+                <value>
+                    <fullName>First spread after IFC</fullName>
+                    <default>false</default>
+                    <label>First spread after IFC</label>
+                </value>
+                <value>
+                    <fullName>First spread after Masthead</fullName>
+                    <default>false</default>
+                    <label>First spread after Masthead</label>
+                </value>
+                <value>
+                    <fullName>Full page Classified</fullName>
+                    <default>false</default>
+                    <label>Full page Classified</label>
+                </value>
+                <value>
+                    <fullName>Guaranteed position</fullName>
+                    <default>false</default>
+                    <label>Guaranteed position</label>
+                </value>
+                <value>
+                    <fullName>Half DPS</fullName>
+                    <default>false</default>
+                    <label>Half DPS</label>
+                </value>
+                <value>
+                    <fullName>Half Page Horizontal</fullName>
+                    <default>false</default>
+                    <label>Half Page Horizontal</label>
+                </value>
+                <value>
+                    <fullName>Half page horizontal facing editorial</fullName>
+                    <default>false</default>
+                    <label>Half page horizontal facing editorial</label>
+                </value>
+                <value>
+                    <fullName>Half page spread under Letters</fullName>
+                    <default>false</default>
+                    <label>Half page spread under Letters</label>
+                </value>
+                <value>
+                    <fullName>Half page spread under Politics This Week</fullName>
+                    <default>false</default>
+                    <label>Half page spread under Politics This Week</label>
+                </value>
+                <value>
+                    <fullName>Half page vertical</fullName>
+                    <default>false</default>
+                    <label>Half page vertical</label>
+                </value>
+                <value>
+                    <fullName>Half page vertical facing editorial</fullName>
+                    <default>false</default>
+                    <label>Half page vertical facing editorial</label>
+                </value>
+                <value>
+                    <fullName>Inside Back Cover</fullName>
+                    <default>false</default>
+                    <label>Inside Back Cover</label>
+                </value>
+                <value>
+                    <fullName>Inside Front Cover spread</fullName>
+                    <default>false</default>
+                    <label>Inside Front Cover spread</label>
+                </value>
+                <value>
+                    <fullName>Loose Inserts</fullName>
+                    <default>false</default>
+                    <label>Loose Inserts</label>
+                </value>
+                <value>
+                    <fullName>Outside Back Cover</fullName>
+                    <default>false</default>
+                    <label>Outside Back Cover</label>
+                </value>
+                <value>
+                    <fullName>Page facing editorial</fullName>
+                    <default>false</default>
+                    <label>Page facing editorial</label>
+                </value>
+                <value>
+                    <fullName>Page facing editorial w/ Guarantee</fullName>
+                    <default>false</default>
+                    <label>Page facing editorial w/ Guarantee</label>
+                </value>
+                <value>
+                    <fullName>Page in Leaders</fullName>
+                    <default>false</default>
+                    <label>Page in Leaders</label>
+                </value>
+                <value>
+                    <fullName>Pre-roll Video</fullName>
+                    <default>false</default>
+                    <label>Pre-roll Video</label>
+                </value>
+                <value>
+                    <fullName>Production charge</fullName>
+                    <default>false</default>
+                    <label>Production charge</label>
+                </value>
+                <value>
+                    <fullName>Property</fullName>
+                    <default>false</default>
+                    <label>Property</label>
+                </value>
+                <value>
+                    <fullName>Quarter Page</fullName>
+                    <default>false</default>
+                    <label>Quarter Page</label>
+                </value>
+                <value>
+                    <fullName>Quarter Page Spread</fullName>
+                    <default>false</default>
+                    <label>Quarter Page Spread</label>
+                </value>
+                <value>
+                    <fullName>Run of app</fullName>
+                    <default>false</default>
+                    <label>Run of app</label>
+                </value>
+                <value>
+                    <fullName>Single Page</fullName>
+                    <default>false</default>
+                    <label>Single Page</label>
+                </value>
+                <value>
+                    <fullName>Sponsorship</fullName>
+                    <default>false</default>
+                    <label>Sponsorship</label>
+                </value>
+                <value>
+                    <fullName>Sponsorship Package</fullName>
+                    <default>false</default>
+                    <label>Sponsorship Package</label>
+                </value>
+                <value>
+                    <fullName>Subscriber Envelopes</fullName>
+                    <default>false</default>
+                    <label>Subscriber Envelopes</label>
+                </value>
+                <value>
+                    <fullName>Tip-On Cards</fullName>
+                    <default>false</default>
+                    <label>Tip-On Cards</label>
+                </value>
+                <value>
+                    <fullName>Weekly Sponsorship</fullName>
+                    <default>false</default>
+                    <label>Weekly Sponsorship</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Display GBR</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Product Charges</controllingFieldValue>
+                <controllingFieldValue>Films</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Production charge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <valueName>Weekly Sponsorship</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display GBR</controllingFieldValue>
+                <valueName>Sponsorship Package</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <valueName>Guaranteed position</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <valueName>Run of app</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <valueName>Combined Audience</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <valueName>Cover</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <valueName>Full page Classified</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/2 Page Horizontal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/2 Page Horizontal Appointments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/2 Page Horizontal Courses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/2 Page Horizontal Executive Focus</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/2 Page Horizontal Property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/2 Page Horizontal Tenders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/2 Page Vertical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/2 Page Vertical Appointments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/2 Page Vertical Courses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/2 Page Vertical Executive Focus</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/2 Page Vertical Property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/2 Page Vertical Tenders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/4 Page</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/4 Page Appointments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/4 Page Courses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/4 Page Executive Focus</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/4 Page Property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/4 Page Tenders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/8 Page  Horizontal Property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour 1/8 Page  Vertical Property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour Page</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour Page Appointments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour Page Courses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour Page Executive Focus</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour Page Property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour Page Tenders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour Single Columns cm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour Single Columns cm Appointments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour Single Columns cm Courses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>4Colour Single Columns cm Tenders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/2 Page  Horizontal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/2 Page  Horizontal Appointments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/2 Page  Horizontal Courses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/2 Page  Horizontal Executive Focus</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/2 Page  Horizontal Property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/2 Page  Horizontal Tenders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/2 Page Vertical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/2 Page Vertical Appointments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/2 Page Vertical Courses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/2 Page Vertical Executive Focus</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/2 Page Vertical Property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/2 Page Vertical Tenders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/4 Page</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/4 Page Appointments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/4 Page Courses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/4 Page Executive Focus</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/4 Page Property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/4 Page Tenders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/8 Page  Horizontal Property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W 1/8 Page  Vertical Property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W Page</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W Page Appointments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W Page Courses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W Page Executive Focus</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W Page Property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W Page Tenders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W Single Columns cm</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W Single Columns cm Appointments</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W Single Columns cm Courses</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>B&amp;W Single Columns cm Tenders</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <valueName>Change to correct edition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <valueName>1/2 Page Classified</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <valueName>1/3rd page Classified</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <valueName>1/4 page Classified</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Films</controllingFieldValue>
+                <valueName>Branded</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Films</controllingFieldValue>
+                <valueName>Commissioned</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Films</controllingFieldValue>
+                <valueName>Film</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Films</controllingFieldValue>
+                <valueName>Pre-roll Video</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Films</controllingFieldValue>
+                <valueName>Sponsorship</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>1/3 Page Vertical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Carrier Sheets</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Cover Wraps</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Double Page Spread</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Facing Contents</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Facing Contributors</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Facing Masthead</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>First spread after Contents</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>First spread after IFC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>First spread after Masthead</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Half DPS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Half Page Horizontal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <valueName>Inside Back Cover</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Inside Front Cover spread</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Loose Inserts</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Outside Back Cover</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Property</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Quarter Page</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Quarter Page Spread</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <valueName>Single Page</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Subscriber Envelopes</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Tip-On Cards</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>1/2 Page Horizontal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>1/2 Page Vertical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <valueName>1/3 page horizontal</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>1/4 Page</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <valueName>Half page horizontal facing editorial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <valueName>Half page vertical</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <valueName>Half page vertical facing editorial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>Page facing editorial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>1/3 DPS under Financial Indicators</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>1/3 Page under Financial Indicators</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>1/4 page in Letters</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>3/4 page in Letters</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>Bookends in Letters</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>Double Page Spread w/ Gurantee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Fireplace under Letters</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>Half page spread under Letters</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>Half page spread under Politics This Week</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>Page facing editorial w/ Guarantee</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>Page in Leaders</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Color__c</fullName>
+        <externalId>false</externalId>
+        <label>Color</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>4 Color</fullName>
+                    <default>false</default>
+                    <label>4 Color</label>
+                </value>
+                <value>
+                    <fullName>2 Color</fullName>
+                    <default>false</default>
+                    <label>2 Color</label>
+                </value>
+                <value>
+                    <fullName>Mono</fullName>
+                    <default>false</default>
+                    <label>Mono</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Combined_Audience__c</fullName>
+        <externalId>false</externalId>
+        <label>Combined Audience</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Discount_IO__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount IO</label>
+        <length>10</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EMB_Discount__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Print_IO__c, VALUE(Discount_IO__c)/10000, IF(Discount__c &gt;= 0, Discount__c/100, 0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Discount %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Edition__c</fullName>
+        <externalId>false</externalId>
+        <label>Edition</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Platform__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AF</fullName>
+                    <default>false</default>
+                    <label>Africa</label>
+                </value>
+                <value>
+                    <fullName>ALL</fullName>
+                    <default>false</default>
+                    <label>ALL</label>
+                </value>
+                <value>
+                    <fullName>AS</fullName>
+                    <default>false</default>
+                    <label>Asia</label>
+                </value>
+                <value>
+                    <fullName>AP</fullName>
+                    <default>false</default>
+                    <label>Asia-Pacific</label>
+                </value>
+                <value>
+                    <fullName>APNA</fullName>
+                    <default>false</default>
+                    <label>Asia Pacific &amp; North America</label>
+                </value>
+                <value>
+                    <fullName>AUS</fullName>
+                    <default>false</default>
+                    <label>Australia</label>
+                </value>
+                <value>
+                    <fullName>BRA</fullName>
+                    <default>false</default>
+                    <label>Brazil</label>
+                </value>
+                <value>
+                    <fullName>CAN</fullName>
+                    <default>false</default>
+                    <label>Canada</label>
+                </value>
+                <value>
+                    <fullName>CEU</fullName>
+                    <default>false</default>
+                    <label>Continental Europe</label>
+                </value>
+                <value>
+                    <fullName>EC</fullName>
+                    <default>false</default>
+                    <label>East Coast</label>
+                </value>
+                <value>
+                    <fullName>EMEA</fullName>
+                    <default>false</default>
+                    <label>EMEA</label>
+                </value>
+                <value>
+                    <fullName>CMEA</fullName>
+                    <default>false</default>
+                    <label>EUR / MEA</label>
+                </value>
+                <value>
+                    <fullName>EUFC</fullName>
+                    <default>false</default>
+                    <label>Financial Centres Continental Europe</label>
+                </value>
+                <value>
+                    <fullName>HK</fullName>
+                    <default>false</default>
+                    <label>Hong Kong</label>
+                </value>
+                <value>
+                    <fullName>LA</fullName>
+                    <default>false</default>
+                    <label>Latin America</label>
+                </value>
+                <value>
+                    <fullName>LON</fullName>
+                    <default>false</default>
+                    <label>London</label>
+                </value>
+                <value>
+                    <fullName>MEA</fullName>
+                    <default>false</default>
+                    <label>M.East &amp; Africa</label>
+                </value>
+                <value>
+                    <fullName>MAS</fullName>
+                    <default>false</default>
+                    <label>Malaysia</label>
+                </value>
+                <value>
+                    <fullName>MEX</fullName>
+                    <default>false</default>
+                    <label>Mexico</label>
+                </value>
+                <value>
+                    <fullName>MEO</fullName>
+                    <default>false</default>
+                    <label>Middle East</label>
+                </value>
+                <value>
+                    <fullName>MW</fullName>
+                    <default>false</default>
+                    <label>Mid West</label>
+                </value>
+                <value>
+                    <fullName>NALA</fullName>
+                    <default>false</default>
+                    <label>North &amp; Latin America</label>
+                </value>
+                <value>
+                    <fullName>NA</fullName>
+                    <default>false</default>
+                    <label>North America</label>
+                </value>
+                <value>
+                    <fullName>PAC</fullName>
+                    <default>false</default>
+                    <label>Pacific</label>
+                </value>
+                <value>
+                    <fullName>SGP</fullName>
+                    <default>false</default>
+                    <label>Singapore</label>
+                </value>
+                <value>
+                    <fullName>SA</fullName>
+                    <default>false</default>
+                    <label>South Asia</label>
+                </value>
+                <value>
+                    <fullName>EUTH</fullName>
+                    <default>false</default>
+                    <label>Travel Hubs Continental Europe</label>
+                </value>
+                <value>
+                    <fullName>UANA</fullName>
+                    <default>false</default>
+                    <label>UK/Asia Pacific/North America</label>
+                </value>
+                <value>
+                    <fullName>UENA</fullName>
+                    <default>false</default>
+                    <label>UK / Europe / North America</label>
+                </value>
+                <value>
+                    <fullName>UE</fullName>
+                    <default>false</default>
+                    <label>UK &amp; Europe</label>
+                </value>
+                <value>
+                    <fullName>UK</fullName>
+                    <default>false</default>
+                    <label>United Kingdom</label>
+                </value>
+                <value>
+                    <fullName>US</fullName>
+                    <default>false</default>
+                    <label>United States Of America</label>
+                </value>
+                <value>
+                    <fullName>DC</fullName>
+                    <default>false</default>
+                    <label>Washington DC</label>
+                </value>
+                <value>
+                    <fullName>WC</fullName>
+                    <default>false</default>
+                    <label>West Coast</label>
+                </value>
+                <value>
+                    <fullName>WW</fullName>
+                    <default>false</default>
+                    <label>World Wide</label>
+                </value>
+                <value>
+                    <fullName>XAP</fullName>
+                    <default>false</default>
+                    <label>Worldwide excluding Asia Pacific</label>
+                </value>
+                <value>
+                    <fullName>XUK</fullName>
+                    <default>false</default>
+                    <label>Worldwide excluding UK</label>
+                </value>
+                <value>
+                    <fullName>XUE</fullName>
+                    <default>false</default>
+                    <label>Worldwide excluding UK/Europe</label>
+                </value>
+                <value>
+                    <fullName>XANA</fullName>
+                    <default>false</default>
+                    <label>WW Except Asia Pac North America</label>
+                </value>
+                <value>
+                    <fullName>XNA</fullName>
+                    <default>false</default>
+                    <label>WW Except North America</label>
+                </value>
+                <value>
+                    <fullName>XAM</fullName>
+                    <default>false</default>
+                    <label>WW Except The Americas</label>
+                </value>
+                <value>
+                    <fullName>XUNA</fullName>
+                    <default>false</default>
+                    <label>WW Except UK &amp; N. America</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Display GBR</controllingFieldValue>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>AP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Display GBR</controllingFieldValue>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>CEU</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Display GBR</controllingFieldValue>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>EMEA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>CMEA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Display GBR</controllingFieldValue>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>MEA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Display GBR</controllingFieldValue>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>NALA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Display GBR</controllingFieldValue>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>NA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>UE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Display GBR</controllingFieldValue>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>UK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Display GBR</controllingFieldValue>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Films</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>WW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>XNA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>APNA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>AUS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>CAN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>HK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>LA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>MAS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>MEO</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>SGP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>SA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>UANA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>UENA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>AF</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>AS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>BRA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>EC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>EUFC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>LON</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>MEX</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>MW</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>PAC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>EUTH</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>DC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>WC</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>XAP</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>XUK</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>XUE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>XANA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>XAM</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>XUNA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>ALL</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Issue_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Issue Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Name__c</fullName>
+        <description>For I/O Editing Purposes only.</description>
+        <externalId>false</externalId>
+        <label>Name</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Platform__c</fullName>
+        <externalId>false</externalId>
+        <label>Platform</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Publication__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Classified Display The Economist</fullName>
+                    <default>false</default>
+                    <label>Classified Digital</label>
+                </value>
+                <value>
+                    <fullName>Classified Print The Economist</fullName>
+                    <default>false</default>
+                    <label>Classified Print</label>
+                </value>
+                <value>
+                    <fullName>Display The Economist</fullName>
+                    <default>false</default>
+                    <label>Digital</label>
+                </value>
+                <value>
+                    <fullName>Display 1843</fullName>
+                    <default>false</default>
+                    <label>Digital 1843</label>
+                </value>
+                <value>
+                    <fullName>Display Espresso</fullName>
+                    <default>false</default>
+                    <label>Digital Espresso</label>
+                </value>
+                <value>
+                    <fullName>Display GBR</fullName>
+                    <default>false</default>
+                    <label>Digital GBR</label>
+                </value>
+                <value>
+                    <fullName>Display World In</fullName>
+                    <default>false</default>
+                    <label>Digital World In</label>
+                </value>
+                <value>
+                    <fullName>Films</fullName>
+                    <default>false</default>
+                    <label>Films</label>
+                </value>
+                <value>
+                    <fullName>Print The Economist</fullName>
+                    <default>false</default>
+                    <label>Print</label>
+                </value>
+                <value>
+                    <fullName>Print 1843</fullName>
+                    <default>false</default>
+                    <label>Print 1843</label>
+                </value>
+                <value>
+                    <fullName>Print 1843 Supplement</fullName>
+                    <default>false</default>
+                    <label>Print Supplement</label>
+                </value>
+                <value>
+                    <fullName>Print World In</fullName>
+                    <default>false</default>
+                    <label>Print World In</label>
+                </value>
+                <value>
+                    <fullName>Product Charges</fullName>
+                    <default>false</default>
+                    <label>Product Charges</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>1843</controllingFieldValue>
+                <valueName>Display 1843</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1843</controllingFieldValue>
+                <valueName>Print 1843</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>1843 Supplement</controllingFieldValue>
+                <valueName>Print 1843 Supplement</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Economist Films</controllingFieldValue>
+                <valueName>Films</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Espresso</controllingFieldValue>
+                <valueName>Display Espresso</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>GBR</controllingFieldValue>
+                <valueName>Display GBR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>The Economist Digital Editions</controllingFieldValue>
+                <valueName>Classified Display The Economist</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>The Economist Digital Editions</controllingFieldValue>
+                <valueName>Display The Economist</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>The Economist Newspaper</controllingFieldValue>
+                <valueName>Classified Print The Economist</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>The Economist Newspaper</controllingFieldValue>
+                <valueName>Print The Economist</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>The World In</controllingFieldValue>
+                <valueName>Display World In</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>The World In</controllingFieldValue>
+                <valueName>Print World In</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Position__c</fullName>
+        <externalId>false</externalId>
+        <label>Position</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Print_IO__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Print IO</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Publication__c</fullName>
+        <externalId>false</externalId>
+        <label>Publication</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1843</fullName>
+                    <default>false</default>
+                    <label>1843</label>
+                </value>
+                <value>
+                    <fullName>1843 Supplement</fullName>
+                    <default>false</default>
+                    <label>1843 Supplement</label>
+                </value>
+                <value>
+                    <fullName>Economist Films</fullName>
+                    <default>false</default>
+                    <label>Economist Films</label>
+                </value>
+                <value>
+                    <fullName>Espresso</fullName>
+                    <default>false</default>
+                    <label>Espresso</label>
+                </value>
+                <value>
+                    <fullName>GBR</fullName>
+                    <default>false</default>
+                    <label>GBR</label>
+                </value>
+                <value>
+                    <fullName>The Economist Digital Editions</fullName>
+                    <default>false</default>
+                    <label>The Economist Digital Editions</label>
+                </value>
+                <value>
+                    <fullName>The Economist Newspaper</fullName>
+                    <default>false</default>
+                    <label>The Economist Newspaper</label>
+                </value>
+                <value>
+                    <fullName>The World In</fullName>
+                    <default>false</default>
+                    <label>The World In</label>
+                </value>
+                <value>
+                    <fullName>The Economist Classified</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>The Economist Classified</label>
+                </value>
+                <value>
+                    <fullName>The Economist Digital Editions Classified</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>The Economist Digital Editions Classified</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Requested_Gauranted__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested / Guaranteed</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Requested</fullName>
+                    <default>false</default>
+                    <label>Requested</label>
+                </value>
+                <value>
+                    <fullName>Guaranteed</fullName>
+                    <default>false</default>
+                    <label>Guaranteed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RevSchId__c</fullName>
+        <description>For Edit I/O Purposes only.</description>
+        <externalId>false</externalId>
+        <label>RevSchId</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Section__c</fullName>
+        <externalId>false</externalId>
+        <label>Ad Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Platform__c</controllingField>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Display</fullName>
+                    <default>false</default>
+                    <label>Display</label>
+                </value>
+                <value>
+                    <fullName>Special Report</fullName>
+                    <default>false</default>
+                    <label>Special Report</label>
+                </value>
+                <value>
+                    <fullName>Classified</fullName>
+                    <default>false</default>
+                    <label>Classified</label>
+                </value>
+                <value>
+                    <fullName>Product Charges</fullName>
+                    <default>false</default>
+                    <label>Product Charges</label>
+                </value>
+                <value>
+                    <fullName>Promo Opportunity</fullName>
+                    <default>false</default>
+                    <label>Promo Opportunity</label>
+                </value>
+                <value>
+                    <fullName>The World If</fullName>
+                    <default>false</default>
+                    <label>The World If</label>
+                </value>
+                <value>
+                    <fullName>Film</fullName>
+                    <default>false</default>
+                    <label>Film</label>
+                </value>
+                <value>
+                    <fullName>Audio Edition</fullName>
+                    <default>false</default>
+                    <label>Audio Edition</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Display GBR</controllingFieldValue>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Product Charges</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Display</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display Espresso</controllingFieldValue>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Product Charges</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Display 1843</controllingFieldValue>
+                <valueName>Miscellaneous</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Product Charges</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>The World If</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display World In</controllingFieldValue>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Product Charges</controllingFieldValue>
+                <valueName>Audio Edition</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Product Charges</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>Special Report</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Product Charges</controllingFieldValue>
+                <valueName>Classified</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product Charges</controllingFieldValue>
+                <controllingFieldValue>Print 1843</controllingFieldValue>
+                <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>Promo Opportunity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Product Charges</controllingFieldValue>
+                <controllingFieldValue>Films</controllingFieldValue>
+                <valueName>Film</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>currency__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please ensure Discount is set to Zero &quot;0&quot;, if you are updating Price.</inlineHelpText>
+        <label>Price</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

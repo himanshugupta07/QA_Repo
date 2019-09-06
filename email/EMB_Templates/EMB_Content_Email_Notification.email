@@ -1,0 +1,16 @@
+Hi, 
+
+You are receiving this email alert as a notification to let you know an  opportunity containing content has been booked at 100%. Please find below the opportunity details:
+
+Account: {!Opportunity.Account}
+Opportunity Name: {!Opportunity.Name} 
+Opportunity Owner: {!Opportunity.OwnerFullName}
+Close Date: {!Opportunity.CloseDate} 
+Stage: {!Opportunity.StageName} 
+Amount: {!Opportunity.Amount}
+Region: {!Opportunity.Region__c}
+Order Number: {!Opportunity.Order_Number__c}
+Link to Opportunity: {!Opportunity.Link}
+
+This email was sent to you on behalf of the Salesforce support team
+salesforcesupport@economist.com

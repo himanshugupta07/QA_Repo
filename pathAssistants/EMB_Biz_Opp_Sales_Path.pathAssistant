@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>EMB Biz Opp Sales Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Reason_returned_to_Sales__c</fieldNames>
+        <info>&lt;ul&gt;&lt;li&gt;Please ensure close date is not in past.&lt;/li&gt;&lt;li&gt;Please select Reason Returned to Sales.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Re-open for Correction</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>EMBBusOps</recordTypeName>
+</PathAssistant>

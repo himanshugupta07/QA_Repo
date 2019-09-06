@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>EconomistLetterhead</letterhead>
+    <name>EMB Request For Proposal Alert</name>
+    <style>freeForm</style>
+    <subject>{!Opportunity.Region__c} {!Opportunity.RFP_Type__c} Request for proposal alert for {!Opportunity.Account}</subject>
+    <textOnly>A request for proposal has been submitted for your review.
+
+Account Name:   {!Opportunity.Account}
+Opportunity Name:  {!Opportunity.Name}
+Opportunity Amount:   {!Opportunity.Amount}
+
+Budget Splits:
+Media:  {!Opportunity.MediaBudget__c}%
+Content:  {!Opportunity.ContentBudget__c}%
+Events:  {!Opportunity.EventsBudget__c}%
+Other: {!Opportunity.OtherBudget__c}%
+
+RFP Type:   {!Opportunity.RFP_Type__c}
+RFP Date:   {!Opportunity.RFP_to_editorial__c}
+Proposal Due Date: {!Opportunity.Proposal_Due_Date__c}
+RFP Other Details:
+{!Opportunity.RFPOtherDetails__c}
+
+Salesperson:  {!Opportunity.OwnerFullName}
+Salesforce Order Number:  {!Opportunity.Order_Number__c}
+Sales Department:   {!Opportunity.Sales_Department__c}
+
+For more details please click on the reference link to the opportunity:
+{!Opportunity.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>
