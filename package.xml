@@ -88,6 +88,7 @@
         <members>OpportunityLineItem.RevSchId__c</members>
         <members>OpportunityLineItem.Section__c</members>
         <members>OpportunityLineItem.currency__c</members>
+        <members>Product2.Medium__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -137,6 +138,7 @@
     </types>
     <types>
         <members>Opportunity.EMBOpp</members>
+        <members>Product2.EconProducts</members>
         <name>RecordType</name>
     </types>
     <types>
