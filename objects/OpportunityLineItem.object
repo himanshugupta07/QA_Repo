@@ -940,6 +940,22 @@
                 <valueName>Page facing editorial</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Classified In Display</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <valueName>Half page horizontal facing editorial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified In Display</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <valueName>Half page vertical facing editorial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified In Display</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>Page facing editorial</valueName>
+            </valueSettings>
+            <valueSettings>
                 <controllingFieldValue>Print 1843</controllingFieldValue>
                 <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
                 <controllingFieldValue>Print World In</controllingFieldValue>
@@ -1570,6 +1586,7 @@
                 <controllingFieldValue>Display The Economist</controllingFieldValue>
                 <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
                 <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified In Display</controllingFieldValue>
                 <controllingFieldValue>Films</controllingFieldValue>
                 <controllingFieldValue>Classified In Display</controllingFieldValue>
                 <controllingFieldValue>Print 1843</controllingFieldValue>
@@ -1880,6 +1897,11 @@
                     <label>Classified Print</label>
                 </value>
                 <value>
+                    <fullName>Classified In Display</fullName>
+                    <default>false</default>
+                    <label>Classified In Display</label>
+                </value>
+                <value>
                     <fullName>Display The Economist</fullName>
                     <default>false</default>
                     <label>Digital</label>
@@ -1988,6 +2010,10 @@
             <valueSettings>
                 <controllingFieldValue>The Economist Newspaper</controllingFieldValue>
                 <valueName>Classified In Display The Economist</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>The World In</controllingFieldValue>
+                <valueName>Classified In Display</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>The World In</controllingFieldValue>
@@ -2220,6 +2246,7 @@
             <valueSettings>
                 <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
                 <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified In Display</controllingFieldValue>
                 <controllingFieldValue>Product Charges</controllingFieldValue>
                 <valueName>Classified</valueName>
             </valueSettings>
@@ -2248,4 +2275,28 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <webLinks>
+        <fullName>Edit_Revenue_Schedules</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Edit Revenue Schedules</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/lightning/cmp/c__uprevschParent?c__oppId={!Opportunity.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Print_Media_OMS</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Print Media OMS</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/lightning/cmp/c__oppProductEditor?c__oppId={!Opportunity.Id}</url>
+    </webLinks>
 </CustomObject>
