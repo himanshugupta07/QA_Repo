@@ -215,7 +215,8 @@
         if(isDupe == 'Split'){
             
             thisOli.RevSchId__c = null;
-
+            thisOli.currency__c = component.get("v.opcurncy")+ " ";
+            thisOli.Issue_Date__c = "";
             oliList.push(thisOli); // Push all fields except Id to the New Oli.
             rowsInt++;
             rows.push(rowsInt);

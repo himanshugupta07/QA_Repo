@@ -24,6 +24,7 @@
         //Handling Close
         var index = component.get("v.rowId");
         var myEvent = component.getEvent("RowID");
+
         //Exporting Row and Oli to be removed from List and Database.
         myEvent.setParams({
             rowToDel: index,

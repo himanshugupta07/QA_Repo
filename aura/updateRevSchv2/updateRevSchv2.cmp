@@ -90,8 +90,8 @@
                 <lightning:layoutItem padding="around-small">
                     <lightning:button
                                       variant="brand"
-                                      label="Split"
-                                      title="Split"
+                                      label="Add Schedule"
+                                      title="Add Schedule"
                                       onclick="{! c.handleSplit }"
                                       />
                 </lightning:layoutItem>
