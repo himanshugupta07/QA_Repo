@@ -923,6 +923,22 @@
                 <valueName>Sponsorship</valueName>
             </valueSettings>
             <valueSettings>
+                <controllingFieldValue>Classified In Display</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <valueName>Half page horizontal facing editorial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified In Display</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <valueName>Half page vertical facing editorial</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Classified In Display</controllingFieldValue>
+                <controllingFieldValue>Print World In</controllingFieldValue>
+                <controllingFieldValue>Print The Economist</controllingFieldValue>
+                <valueName>Page facing editorial</valueName>
+            </valueSettings>
+            <valueSettings>
                 <controllingFieldValue>Print 1843</controllingFieldValue>
                 <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
                 <controllingFieldValue>Print World In</controllingFieldValue>
@@ -1093,24 +1109,7 @@
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Print World In</controllingFieldValue>
-                <valueName>Half page horizontal facing editorial</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Print World In</controllingFieldValue>
                 <valueName>Half page vertical</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Print World In</controllingFieldValue>
-                <valueName>Half page vertical facing editorial</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Print World In</controllingFieldValue>
-                <controllingFieldValue>Print The Economist</controllingFieldValue>
-                <valueName>Page facing editorial</valueName>
-            </valueSettings>
-            <valueSettings>
-                <controllingFieldValue>Print The Economist</controllingFieldValue>
-                <valueName>1/3 DPS under Financial Indicators</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>Print The Economist</controllingFieldValue>
@@ -1560,6 +1559,7 @@
                 <controllingFieldValue>Display The Economist</controllingFieldValue>
                 <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
                 <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified In Display</controllingFieldValue>
                 <controllingFieldValue>Films</controllingFieldValue>
                 <controllingFieldValue>Print 1843</controllingFieldValue>
                 <controllingFieldValue>Print 1843 Supplement</controllingFieldValue>
@@ -1863,6 +1863,11 @@
                     <label>Classified Print</label>
                 </value>
                 <value>
+                    <fullName>Classified In Display</fullName>
+                    <default>false</default>
+                    <label>Classified In Display</label>
+                </value>
+                <value>
                     <fullName>Display The Economist</fullName>
                     <default>false</default>
                     <label>Digital</label>
@@ -1957,6 +1962,10 @@
             <valueSettings>
                 <controllingFieldValue>The Economist Newspaper</controllingFieldValue>
                 <valueName>Print The Economist</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>The World In</controllingFieldValue>
+                <valueName>Classified In Display</valueName>
             </valueSettings>
             <valueSettings>
                 <controllingFieldValue>The World In</controllingFieldValue>
@@ -2183,6 +2192,7 @@
             <valueSettings>
                 <controllingFieldValue>Classified Print The Economist</controllingFieldValue>
                 <controllingFieldValue>Classified Display The Economist</controllingFieldValue>
+                <controllingFieldValue>Classified In Display</controllingFieldValue>
                 <controllingFieldValue>Product Charges</controllingFieldValue>
                 <valueName>Classified</valueName>
             </valueSettings>
