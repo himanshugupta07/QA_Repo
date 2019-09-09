@@ -2221,4 +2221,28 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <webLinks>
+        <fullName>Edit_Revenue_Schedules</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Edit Revenue Schedules</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/lightning/cmp/c__uprevschParent?c__oppId={!Opportunity.Id}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Print_Media_OMS</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Print Media OMS</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>/lightning/cmp/c__oppProductEditor?c__oppId={!Opportunity.Id}</url>
+    </webLinks>
 </CustomObject>
