@@ -179,12 +179,12 @@
     	var toastEvent = $A.get("e.force:showToast");
         console.log(component.get("v.Id"));
         toastEvent.setParams({
-            title : 'Error',
+            title : 'Warning',
             message: 'Please change Revenue Schedules! If Needed',
             duration:' 5000',
             key: 'info_alt',
-            type: 'error',
-            mode: 'pester'
+            type: 'warning',
+            mode: 'dismissible'
         });
         toastEvent.fire();
     },
@@ -215,7 +215,8 @@
         if(isDupe == 'Split'){
             
             thisOli.RevSchId__c = null;
-
+            thisOli.currency__c = component.get("v.opcurncy")+ " ";
+            thisOli.Issue_Date__c = "";
             oliList.push(thisOli); // Push all fields except Id to the New Oli.
             rowsInt++;
             rows.push(rowsInt);
