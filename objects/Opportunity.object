@@ -12,6 +12,16 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Close_Date_Updated_from_Component__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>https://jira.economist.com/browse/BET-398</description>
+        <externalId>false</externalId>
+        <label>Close Date Updated from Component</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>EuroFinanceSubtotal__c</fullName>
         <externalId>false</externalId>
         <label>EuroFinance Subtotal</label>
