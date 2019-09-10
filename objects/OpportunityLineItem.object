@@ -2111,6 +2111,17 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>Order_Sequence__c</fullName>
+        <description>https://jira.economist.com/browse/BET-625
+This field generates Opportunity Line Item Sequence for Each Line Item in a Format of 000.</description>
+        <externalId>false</externalId>
+        <label>Order Sequence</label>
+        <length>5</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Requested_Gauranted__c</fullName>
         <externalId>false</externalId>
         <label>Requested / Guaranteed</label>
