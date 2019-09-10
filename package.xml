@@ -7,10 +7,15 @@
         <members>EmbProdOliHandler</members>
         <members>EmbProdOliHandler_Test</members>
         <members>JSON_Helper</members>
+        <members>OpportunityLineItemService</members>
         <members>JSONhelper_Test</members>
         <members>SendIOEmail</members>
         <members>SendIOEmailV2</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>OpportunityLineItemTrigger</members>
+        <name>ApexTrigger</name>
     </types>
     <types>
         <members>Opportunity.Media_Discountv6</members>
@@ -65,6 +70,8 @@
         <members>Opportunity.OtherBudget__c</members>
         <members>Opportunity.SignalNoiseBudget__c</members>
         <members>Opportunity.Territory_Name_c__c</members>
+        <members>Opportunity.Total_Product_Count__c</members>
+        <members>OpportunityLineItem.Order_Sequence__c</members>
         <members>OpportunityLineItem.Ad_Size__c</members>
         <members>OpportunityLineItem.Color__c</members>
         <members>OpportunityLineItem.Combined_Audience__c</members>

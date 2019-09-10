@@ -12,6 +12,21 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Total_Product_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>https://jira.economist.com/browse/BET-805
+This field will track the count of all the products added to the opp to generate</description>
+        <externalId>false</externalId>
+        <label>Total Product Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Close_Date_Updated_from_Component__c</fullName>
         <defaultValue>false</defaultValue>
         <description>https://jira.economist.com/browse/BET-398</description>
