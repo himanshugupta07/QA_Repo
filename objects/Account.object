@@ -75,4 +75,54 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <validationRules>
+        <fullName>Physical_Postcode_required</fullName>
+        <active>true</active>
+        <description>Physical_Postcode_required</description>
+        <errorConditionFormula>AND(
+OR(NOT($Profile.Name = &quot;System Administrator&quot;  || $User.Alias = &quot;autocln&quot;)),
+ISBLANK(BillingPostalCode),
+OR((CASE(BillingCountry, 
+&apos;Algeria&apos;, 1, &apos;Argentina&apos;, 1,&apos;Armenia&apos;,1,&apos;Australia&apos;,1,
+&apos;Austria&apos;,1,&apos;Azerbaijan&apos;,1,&apos;Bangladesh&apos;,1,&apos;Belarus&apos;,1, &apos;Belgium&apos;,1,&apos;Bosnia &amp; Herzegovina&apos;,1,&apos;Brazil&apos;,1,&apos;Brunei&apos;,1,
+&apos;Bulgaria&apos;,1,&apos;Canada&apos;,1,&apos;China&apos;,1,&apos;Croatia&apos;,1,&apos;Cyprus&apos;,1,
+&apos;Czech Republic&apos;,1,&apos;Denmark&apos;,1,&apos;Estonia&apos;,1,&apos;Faroe Islands&apos;,1,
+&apos;Finland&apos;,1,&apos;France&apos;,1,&apos;Georgia&apos;,1,&apos;Germany&apos;,1,&apos;Greece&apos;,1,
+&apos;Greenland&apos;,1,&apos;Guam&apos;,1,&apos;Hungary&apos;,1,&apos;India&apos;,1,&apos;Indonesia&apos;,1,
+&apos;Israel&apos;,1,&apos;Italy&apos;,1,&apos;Japan&apos;,1,&apos;Kazakhstan&apos;,1,&apos;Korea (South)&apos;,1,
+&apos;Kyrgyzstan&apos;,1,&apos;Latvia&apos;,1,&apos;Liechtenstein&apos;,1,&apos;Lithuania&apos;,1,
+&apos;Luxembourg&apos;,1,&apos;Macedonia&apos;,1,&apos;Madagascar&apos;,1,&apos;Malaysia&apos;,1,
+&apos;Marshall Islands&apos;,1,&apos;Martinique&apos;,1,&apos;Mayotte&apos;,1,&apos;Mexico&apos;,1,
+&apos;Mongolia&apos;,1,&apos;Montenegro&apos;,1,&apos;Netherlands&apos;,1,&apos;New Zealand&apos;,1,
+&apos;Norway&apos;,1,&apos;Pakistan&apos;,1,&apos;Philippines&apos;,1,&apos;Poland&apos;,1,&apos;Portugal&apos;,1,
+&apos;Puerto Rico&apos;,1,&apos;Reunion&apos;,1,&apos;Russian Federation&apos;,1,&apos;Saudi Arabia&apos;,1,
+&apos;Serbia&apos;,1,&apos;Singapore&apos;,1,&apos;Slovakia&apos;,1,&apos;Slovenia&apos;,1,&apos;South Africa&apos;,1,
+&apos;Spain&apos;,1,&apos;Sri Lanka&apos;,1,&apos;Sweden&apos;,1,&apos;Switzerland&apos;,1,&apos;Taiwan&apos;,1,
+&apos;Tajikistan&apos;,1,&apos;Thailand&apos;,1,&apos;Tunisia&apos;,1,&apos;Turkey&apos;,1,&apos;Turkmenistan&apos;,1,
+&apos;Ukraine&apos;,1,&apos;United Kingdom&apos;,1,&apos;United States&apos;,1,&apos;Uruguay&apos;,1,
+&apos;Uzbekistan&apos;,1,&apos;Vietnam&apos;,1,&apos;Virgin Islands (US)&apos;,1,
+0)= 1),
+(CASE(Country_Assignment__c, 
+&apos;Algeria&apos;, 1, &apos;Argentina&apos;, 1,&apos;Armenia&apos;,1,&apos;Australia&apos;,1,
+&apos;Austria&apos;,1,&apos;Azerbaijan&apos;,1,&apos;Bangladesh&apos;,1,&apos;Belarus&apos;,1, &apos;Belgium&apos;,1,&apos;Bosnia &amp; Herzegovina&apos;,1,&apos;Brazil&apos;,1,&apos;Brunei&apos;,1,
+&apos;Bulgaria&apos;,1,&apos;Canada&apos;,1,&apos;China&apos;,1,&apos;Croatia&apos;,1,&apos;Cyprus&apos;,1,
+&apos;Czech Republic&apos;,1,&apos;Denmark&apos;,1,&apos;Estonia&apos;,1,&apos;Faroe Islands&apos;,1,
+&apos;Finland&apos;,1,&apos;France&apos;,1,&apos;Georgia&apos;,1,&apos;Germany&apos;,1,&apos;Greece&apos;,1,
+&apos;Greenland&apos;,1,&apos;Guam&apos;,1,&apos;Hungary&apos;,1,&apos;India&apos;,1,&apos;Indonesia&apos;,1,
+&apos;Israel&apos;,1,&apos;Italy&apos;,1,&apos;Japan&apos;,1,&apos;Kazakhstan&apos;,1,&apos;Korea (South)&apos;,1,
+&apos;Kyrgyzstan&apos;,1,&apos;Latvia&apos;,1,&apos;Liechtenstein&apos;,1,&apos;Lithuania&apos;,1,
+&apos;Luxembourg&apos;,1,&apos;Macedonia&apos;,1,&apos;Madagascar&apos;,1,&apos;Malaysia&apos;,1,
+&apos;Marshall Islands&apos;,1,&apos;Martinique&apos;,1,&apos;Mayotte&apos;,1,&apos;Mexico&apos;,1,
+&apos;Mongolia&apos;,1,&apos;Montenegro&apos;,1,&apos;Netherlands&apos;,1,&apos;New Zealand&apos;,1,
+&apos;Norway&apos;,1,&apos;Pakistan&apos;,1,&apos;Philippines&apos;,1,&apos;Poland&apos;,1,&apos;Portugal&apos;,1,
+&apos;Puerto Rico&apos;,1,&apos;Reunion&apos;,1,&apos;Russian Federation&apos;,1,&apos;Saudi Arabia&apos;,1,
+&apos;Serbia&apos;,1,&apos;Singapore&apos;,1,&apos;Slovakia&apos;,1,&apos;Slovenia&apos;,1,&apos;South Africa&apos;,1,
+&apos;Spain&apos;,1,&apos;Sri Lanka&apos;,1,&apos;Sweden&apos;,1,&apos;Switzerland&apos;,1,&apos;Taiwan&apos;,1,
+&apos;Tajikistan&apos;,1,&apos;Thailand&apos;,1,&apos;Tunisia&apos;,1,&apos;Turkey&apos;,1,&apos;Turkmenistan&apos;,1,
+&apos;Ukraine&apos;,1,&apos;United Kingdom&apos;,1,&apos;United States&apos;,1,&apos;Uruguay&apos;,1,
+&apos;Uzbekistan&apos;,1,&apos;Vietnam&apos;,1,&apos;Virgin Islands (US)&apos;,1,
+0)= 1)))</errorConditionFormula>
+        <errorDisplayField>AccountBatch__c</errorDisplayField>
+        <errorMessage>Physical Postcode is required on the account. Please edit the account and add the missing data.</errorMessage>
+    </validationRules>
 </CustomObject>

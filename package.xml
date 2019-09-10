@@ -155,6 +155,7 @@
         <members>Opportunity.Request_for_Proposal</members>
         <members>Opportunity.EMB_Budget_Split_Equals_100</members>
         <members>Opportunity.EMB_Budget_Split_with_Product</members>
+        <members>Account.Physical_Postcode_required</members>
         <name>ValidationRule</name>
     </types>
     <types>
