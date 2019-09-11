@@ -96,6 +96,8 @@
         <members>OpportunityLineItem.Section__c</members>
         <members>OpportunityLineItem.currency__c</members>
         <members>Product2.Medium__c</members>
+        <members>User.Entity_Name__c</members>
+        <members>User.Entity_Address__c</members>
         <name>CustomField</name>
     </types>
     <types>
